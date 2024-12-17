@@ -1,4 +1,8 @@
-#Trend of gas_emissions by type
+#--------------Trend of gas_emissions by type over the years
+#Required libraries
+library(tidyverse)
+
+#_____Scatter
 emissions_data %>% #dataframe 
   filter(gas_type!="Combined") %>% 
   ggplot(aes(x=year, y=Total/1000, colour = gas_type))+
