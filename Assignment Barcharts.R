@@ -4,7 +4,7 @@ library(tidyverse)
 library(paletteer)
 library(forcats)
 ############################################################
-#1. Assignment BarChart
+#1. Assignment Bar Chart
 
 sector_data %>% 
   filter(gas_type!='Combined', year=='2023', Percentage!=0) %>% 
