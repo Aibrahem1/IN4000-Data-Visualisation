@@ -1,6 +1,40 @@
 #---------------------bar charts-------------------------------#
+#Required Libraries
+library(tidyverse)
+library(paletteer)
+library(forcats)
+############################################################
+#1. Assignment BarChart
 
-# barchart1: for 2023 with facet ~gas theme minimal
+sector_data %>% 
+  filter(gas_type!='Combined', year=='2023', Percentage!=0) %>% 
+  select(sector, gas_type, Percentage, emissions) %>%
+  mutate(sector = fct_reorder(sector, emissions, .desc = FALSE)) %>%  
+  ggplot(aes(x=sector, y=Percentage, fill = gas_type))+
+  geom_bar(stat = 'identity', width = 0.7, position = 'identity')+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))+
+  geom_text(size=3,face='bold', aes(
+    label =paste0(round(Percentage, 2),'%'),
+    hjust = ifelse(gas_type %in% c("NF3", "PFC"), 1.2, -0.2),
+    colour = ifelse(gas_type%in%c('NF3','PFC'), 'white', 'black')))+ 
+  facet_grid(.~gas_type)+
+  coord_flip()+
+  scale_fill_viridis_d()+
+  scale_color_identity()+
+  labs(title = 'Analysis of Gas Composition by Sector for the Year 2023:Comprehensive Breakdown of Emission Sources',
+       caption = 'Data source: UK Office for National Statistics (ONS) - UK Environmental Accounts',
+       y=NULL,
+       x='Sector',
+       fill='Gas Type')+
+  theme(axis.text.x = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.text.y = element_text(face = 'bold', angle = 0),
+        axis.title.y = element_text(size=13),
+        strip.text = element_text(size = 13))
+
+
+
+# Barchart: for 2023 with facet ~gas theme minimal
 
 sector_data %>% 
   filter(year == "2023", 
@@ -37,8 +71,11 @@ sector_data %>%
     axis.ticks.x = element_blank(),
     strip.text = element_text(size = 14, face = "bold"),
     panel.grid.minor = element_blank(),
-    panel.spacing = unit(1.5, "lines")
-  )
+    panel.spacing = unit(1.5, "lines"))
+
+  
+# Position inside for NF3 and PFC
+# White for NF3 and PFC, black for others
 ######################################################################
 #barchar 2:  facet by gas type using viridis colour for accessibility
 #white colour fill for NF3 and PFC 
