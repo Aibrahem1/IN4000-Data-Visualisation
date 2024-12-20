@@ -1,9 +1,0 @@
-#Atmospheric emissions: greenhouse gases by industry and gas
-
-https://www.ons.gov.uk/economy/environmentalaccounts/datasets/ukenvironmentalaccountsatmosphericemissionsgreenhousegasemissionsbyeconomicsectorandgasunitedkingdom
-
-
-
-#UK greenhouse gas emissions: local authority and regional
-
-https://www.data.gov.uk/dataset/723c243d-2f1a-4d27-8b61-cdb93e5b10ff/uk-greenhouse-gas-emissions-local-authority-and-regional
