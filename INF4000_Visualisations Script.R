@@ -32,8 +32,8 @@ Consumer_data_long %>%
                                     family="sans"),
         legend.position = "top",
         legend.text = element_text(size = 10),
-        plot.caption = element_text(size = 10,
-                                    face = 'bold'),
+        plot.caption.position = 'plot',
+        plot.caption = element_text(size = 10),
         panel.background = element_blank(),
         axis.text = element_blank(),
         axis.ticks = element_blank(),
@@ -68,13 +68,18 @@ GHG_data_long %>%
                               .desc = TRUE)) %>%
   ggplot(aes(x = year, y = Sector, fill = Emissions/1000)) +
   geom_tile(color = "white") +  # Adding white borders for readability
-  labs(title = "Total Greenhouse Gas Emissions by Sector from 1990 to 2023\n(Intensity by Emission Levels)", x = "Year", y = "Sector") +
+  labs(title = "Total Greenhouse Gas Emissions by Sector from 1990 to 2023\n(Intensity by Emission Levels)", 
+       x = "Year", 
+       y = "Sector",
+       caption = 'Data source: UK Office for National Statistics (ONS) - UK Environmental Accounts') +
   scale_fill_viridis(name = "Emissions\nMillion Tonnes", option = "C") +  # Continuous viridis scale for gradient in heatmap
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1),
         plot.title = element_text(face = "bold", size = 17),
         axis.text = element_text(face = "bold"),
-        axis.text.y = element_text(angle = 20))
+        axis.text.y = element_text(angle = 20),
+        plot.caption.position = 'plot',
+        plot.caption = element_text(size = 10))
 
 
 #----------(Figure : Stacked Area Chart: top emitting Sectors in the UK 1990-2023)------
@@ -91,16 +96,21 @@ ggplot(top10ghg, aes(x = year,
                      y = Emissions/1000, #Emissions in Million Tones 
                      fill = Sector)) +
   geom_area(position = "stack") +
-  labs(title = "Top emitting sectors\nin the UK,1990 to 2023",
+  labs(title = "UK's Highest Emission Sectors Trend Over Time (1990-2023)",
        x = "Year",
-       y = "Total Emissions\nin Million Tonnes") +
+       y = "Total Emissions\nin Million Tonnes",
+       caption = 'Data source: UK Office for National Statistics (ONS) - UK Environmental Accounts' ) +
   theme_minimal() +
+  theme(plot.title = element_text(face = 'bold', size = 17),
+        plot.caption.position = 'plot',
+        plot.caption = element_text(size = 10))+
   scale_fill_viridis_d()+
   geom_vline(xintercept = 2015, 
              lty="dashed")+
   geom_vline(xintercept = 2020, lty="dashed", color="red")+
   annotate("text", x = 2015, y = max(top10ghg$Emissions) / 1000, 
-           label = "Paris Agreement\n 2015", angle = 90, vjust = -0.5, hjust = -0.1,
+           label = "Paris Agreement\n          2015", 
+           angle = 90, vjust = -0.5, hjust = -0.1,
            color = "white", size = 3.5)+
   annotate("text", x = 2020, y = max(top10ghg$Emissions) / 1000, 
            label = "Covid-19", angle = 90, vjust = -0.5, hjust = -0.1,
@@ -125,14 +135,15 @@ ggplot(uk_region_all_map) +
                size = 2.7, check_overlap = TRUE) +  # Label with dynamic color
   scale_fill_viridis_c(name = "CO2e Emissions (kt)", option = "plasma") +
   scale_color_identity() +  # Use color from the data (no scale applied)
-  labs(title = "Geospatial Heatmap of CO2e Emissions in the UK (2022)",
+  labs(title = "Geospatial Heatmap of CO2e Emissions by Region in the UK (2022)",
        subtitle = "Combined Sectors Emissions",
        caption = "Data Source: UK Greenhouse Gas Emissions: Local Authority and Regional") +
   theme_minimal() +
   theme(
-    plot.title = element_text(size = 18, face = 'bold', hjust = 1.45),
-    plot.subtitle = element_text(size = 13, hjust = 0.099),
-    plot.caption = element_text(face = 'bold'),
+    plot.title = element_text(size = 17, face = 'bold'),
+    plot.subtitle = element_text(size = 13),
+    plot.caption = element_text(size = 10),
+    plot.caption.position = 'plot',
     axis.text = element_blank(),
     axis.ticks = element_blank(),
     axis.title = element_blank(),
@@ -168,13 +179,13 @@ emissions_data %>% #dataframe
   theme_minimal(base_size = 12) +  # Clean theme with larger base font
   theme(plot.title = element_text(face = "bold", 
                                   hjust = 0.5, # Centered title
-                                  size = 25),
+                                  size = 19),
         plot.subtitle = element_text(hjust = 0.5, 
                                      size = 12),  # Subtitle under title
         axis.title = element_text(size = 14, 
                                   face = "bold"),  # Bold axis titles
         axis.text = element_text(size = 14),  # Larger axis text
-        legend.position = "right",  # Position legend to the right
+        legend.position = "bottom",  # Position legend to the right
         legend.title = element_text(face = "bold", 
                                     size = 14),  # Bold legend title
         legend.text = element_text(size = 14),# Adjust legend text size
@@ -183,9 +194,9 @@ emissions_data %>% #dataframe
         panel.grid.minor = element_blank(),
         panel.background =element_blank()) + # Remove minor grid lines
   theme(plot.caption.position = "plot",
-        plot.caption = element_text(hjust = 0, size = 14))+
+        plot.caption = element_text(size = 10))+
   theme(
-    panel.background = element_rect(fill = "grey100", 
+    panel.background = element_rect(fill = "snow", 
                                     color = "black"),  # Plot area background
     plot.background = element_rect(fill = "white"),  # Entire plot background
     panel.grid.major = element_line(color = "grey"),  # Major gridlines
