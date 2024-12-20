@@ -32,7 +32,7 @@ emissions_data %>% #dataframe
         axis.title = element_text(size = 14, 
                                   face = "bold"),  # Bold axis titles
         axis.text = element_text(size = 14),  # Larger axis text
-        legend.position = "right",  # Position legend to the right
+        legend.position = "bottom",  # Position legend to the right
         legend.title = element_text(face = "bold", 
                                     size = 14),  # Bold legend title
         legend.text = element_text(size = 14),# Adjust legend text size
@@ -43,7 +43,7 @@ emissions_data %>% #dataframe
   theme(plot.caption.position = "plot",
         plot.caption = element_text(hjust = 0, size = 14))+
   theme(
-    panel.background = element_rect(fill = "grey100", 
+    panel.background = element_rect(fill = "snow", 
                                     color = "black"),  # Plot area background
     plot.background = element_rect(fill = "white"),  # Entire plot background
     panel.grid.major = element_line(color = "grey"),  # Major gridlines
