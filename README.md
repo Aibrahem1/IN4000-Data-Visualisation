@@ -1,6 +1,6 @@
 # Final Report Visualizations
 
-![Visualization Overview](https://via.placeholder.com/1200x400?text=Final+Report+Visualizations)
+![Visualization Overview](https://files.oaiusercontent.com/file-Th5EFusgFi2NBmYgFgbi8q?se=2024-12-21T20%3A38%3A23Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D396304c4-67df-4dfd-b9cd-c9eabdadc471.webp&sig=/XwCpSXIAViD2jtxdb%2BzP0MYcc7ZCLMe48bdoD1uMuY%3D)
 
 This repository contains R scripts for generating various visualizations related to greenhouse gas emissions and consumer behavior in the UK. These scripts leverage data from the UK Office for National Statistics (ONS) to provide insights through multiple graphical representations.
 
