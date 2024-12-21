@@ -7,7 +7,7 @@ This repository contains R scripts for generating various visualizations related
 ## Visualizations
 
 ### 1. **Pie Chart**: Consumer Footprint by Gas Type Over Three Decades
-![Pie Chart Preview](https://via.placeholder.com/800x400?text=Pie+Chart+Preview)
+![Pie Chart Preview](https://github.com/Aibrahem1/IN4000-Data-Visualisation/blob/main/Graphs/pie%20chart.png?raw=true)
 - **Description**: Displays consumer greenhouse gas (GHG) footprint by gas type for the years 1990, 2000, 2010, and 2020.
 - **Dependencies**:
   - `tidyverse`
