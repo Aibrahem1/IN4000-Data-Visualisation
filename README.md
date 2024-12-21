@@ -18,7 +18,7 @@ This repository contains R scripts for generating various visualizations related
   - Styled for clarity and presentation.
 
 ### 2. **Heatmap**: Total Greenhouse Gas Emissions by Sector (1990–2023)
-![Heatmap Preview](https://via.placeholder.com/800x400?text=Heatmap+Preview)
+![Heatmap Preview](https://github.com/Aibrahem1/IN4000-Data-Visualisation/blob/main/Graphs/heatmap.png)
 - **Description**: A tile-based heatmap showing emission intensity across sectors over the years.
 - **Dependencies**:
   - `viridis`
@@ -31,7 +31,7 @@ This repository contains R scripts for generating various visualizations related
   - Clear labeling and intuitive color scaling.
 
 ### 3. **Stacked Area Chart**: Top Emitting Sectors in the UK (1990–2023)
-![Stacked Area Chart Preview](https://via.placeholder.com/800x400?text=Stacked+Area+Chart+Preview)
+![Stacked Area Chart Preview](https://github.com/Aibrahem1/IN4000-Data-Visualisation/blob/main/Graphs/area%20chart.png)
 - **Description**: Tracks the emission trends of the highest emitting sectors over time.
 - **Dependencies**:
   - `tidyverse`
