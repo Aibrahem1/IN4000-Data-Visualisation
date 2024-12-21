@@ -57,7 +57,7 @@ https://github.com/Aibrahem1/IN4000-Data-Visualisation/blob/main/Graphs/geospati
   - Minimalist styling for better focus on data.
 
 ### 5. **Line Chart**: Gas Types Emissions Trend (1990–2023)
-![Line Chart Preview](https://via.placeholder.com/800x400?text=Line+Chart+Preview)
+![Line Chart Preview](https://github.com/Aibrahem1/IN4000-Data-Visualisation/blob/main/Graphs/line%20chart.png?raw=true)
 - **Description**: Displays scaled trends for different gas types over time.
 - **Dependencies**:
   - `tidyverse`
