@@ -150,7 +150,7 @@ ggplot(uk_region_all_map) +
     panel.grid = element_blank(),
     legend.position = "right")
 
-#----------(Figure :line chart gas types emissions trend 1990 to 2023 scaled)-----------
+#-----------(Figure :line chart gas types emissions trend 1990 to 2023 scaled)-----------
 #1. Load "vis_data10.RData"
 
 #2. Run following Libraries
