@@ -165,7 +165,7 @@ emissions_data %>% #dataframe
   geom_line(alpha=0.5,
             size=1,
             lty="solid")+
-  geom_smooth(method = "lm", se=FALSE, size=0.2)+
+  geom_smooth(method = "lm", se=TRUE, size=0.2)+
   scale_y_log10(breaks = scales::trans_breaks("log10", function(x) 10^x),
                 labels = scales::trans_format("log10", scales::math_format(10^.x)))+
   scale_colour_viridis_d()+ #option 1 scale colour virdis_d 
@@ -210,3 +210,4 @@ emissions_data %>% #dataframe
            hjust = 0,
            vjust=1,
            angle=90) # label for NF3 gas drop
+
