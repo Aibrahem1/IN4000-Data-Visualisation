@@ -1,10 +1,13 @@
 # Final Report Visualizations
 
+![Visualization Overview](https://via.placeholder.com/1200x400?text=Final+Report+Visualizations)
+
 This repository contains R scripts for generating various visualizations related to greenhouse gas emissions and consumer behavior in the UK. These scripts leverage data from the UK Office for National Statistics (ONS) to provide insights through multiple graphical representations.
 
 ## Visualizations
 
 ### 1. **Pie Chart**: Consumer Footprint by Gas Type Over Three Decades
+![Pie Chart Preview](https://via.placeholder.com/800x400?text=Pie+Chart+Preview)
 - **Description**: Displays consumer greenhouse gas (GHG) footprint by gas type for the years 1990, 2000, 2010, and 2020.
 - **Dependencies**:
   - `tidyverse`
@@ -15,6 +18,7 @@ This repository contains R scripts for generating various visualizations related
   - Styled for clarity and presentation.
 
 ### 2. **Heatmap**: Total Greenhouse Gas Emissions by Sector (1990–2023)
+![Heatmap Preview](https://via.placeholder.com/800x400?text=Heatmap+Preview)
 - **Description**: A tile-based heatmap showing emission intensity across sectors over the years.
 - **Dependencies**:
   - `viridis`
@@ -27,6 +31,7 @@ This repository contains R scripts for generating various visualizations related
   - Clear labeling and intuitive color scaling.
 
 ### 3. **Stacked Area Chart**: Top Emitting Sectors in the UK (1990–2023)
+![Stacked Area Chart Preview](https://via.placeholder.com/800x400?text=Stacked+Area+Chart+Preview)
 - **Description**: Tracks the emission trends of the highest emitting sectors over time.
 - **Dependencies**:
   - `tidyverse`
@@ -37,6 +42,7 @@ This repository contains R scripts for generating various visualizations related
   - Color-coded sectors for easy differentiation.
 
 ### 4. **Geospatial Heatmap**: CO2e Emissions by Region in the UK (2022)
+![Geospatial Heatmap Preview](https://via.placeholder.com/800x400?text=Geospatial+Heatmap+Preview)
 - **Description**: A map visualizing CO2e emissions by region in the UK.
 - **Dependencies**:
   - `tidyverse`
@@ -50,6 +56,7 @@ This repository contains R scripts for generating various visualizations related
   - Minimalist styling for better focus on data.
 
 ### 5. **Line Chart**: Gas Types Emissions Trend (1990–2023)
+![Line Chart Preview](https://via.placeholder.com/800x400?text=Line+Chart+Preview)
 - **Description**: Displays scaled trends for different gas types over time.
 - **Dependencies**:
   - `tidyverse`
@@ -88,3 +95,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Acknowledgments
 Special thanks to the UK ONS for providing comprehensive environmental accounts data.
+
+---
+
+_Visualizations are critical for understanding complex data trends. Explore the repository and share your feedback to improve the presentation and insights further!
