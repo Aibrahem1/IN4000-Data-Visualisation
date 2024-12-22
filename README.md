@@ -42,7 +42,7 @@ This repository contains R scripts for generating various visualizations related
   - Color-coded sectors for easy differentiation.
 https://github.com/Aibrahem1/IN4000-Data-Visualisation/blob/main/Graphs/geospatial%20map.png
 
-### 4. **Geospatial Heatmap**: CO2e Emissions by Region in the UK (2022)
+### 4. **Geospatial Heatmap**: CO2e Emissions by Region in the UK (2022) 
 ![Geospatial Heatmap Preview](https://github.com/Aibrahem1/IN4000-Data-Visualisation/blob/main/Graphs/geospatial%20map.png)
 - **Description**: A map visualizing CO2e emissions by region in the UK.
 - **Dependencies**:
