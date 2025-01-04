@@ -99,4 +99,4 @@ Special thanks to the UK ONS for providing comprehensive environmental accounts 
 
 ---
 
-_Visualizations are critical for understanding complex data trends. Explore the repository and share your feedback to improve the presentation and insights further!
+Visualizations are critical for understanding complex data trends. Explore the repository and share your feedback to improve the presentation and insights further!
