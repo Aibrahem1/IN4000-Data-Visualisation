@@ -1,6 +1,6 @@
 # Final Report Visualizations
 
-![Visualization Overview](https://files.oaiusercontent.com/file-Th5EFusgFi2NBmYgFgbi8q?se=2024-12-21T20%3A38%3A23Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D396304c4-67df-4dfd-b9cd-c9eabdadc471.webp&sig=/XwCpSXIAViD2jtxdb%2BzP0MYcc7ZCLMe48bdoD1uMuY%3D)
+![Visualization Overview](https://github.com/Aibrahem1/IN4000-Data-Visualisation/blob/main/Graphs/IN4000%20Readme%20Overview.png)
 
 This repository contains R scripts for generating various visualizations related to greenhouse gas emissions and consumer behavior in the UK. These scripts leverage data from the UK Office for National Statistics (ONS) to provide insights through multiple graphical representations.
 
